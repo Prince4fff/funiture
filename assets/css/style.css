@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --grey: #535353;
+    --brown: #7c2c0c;
+}
+
+.text-brown {
+    color: #7c2c0c;
+}
+
+.text-grey {
+    color: #535353;
+}
+
+.them-bg {
+    background-color: #fdebcb;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Utilities Classes */
+a {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 3rem 0;
+}
+
+p {
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+
+.grey-text {
+    color: #535353;
+}
+
+/* Start header */
+header {
+    background-color: #7c2c0c;
+    color: #fff;
+    height: 55px;
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: #fff;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    border-bottom: 1px solid transparent;
+
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+.offcanvas {
+    background-color: #7c2c0c;
+    color: #fff;
+}
+
+.btn-close {
+    color: #fff;
+}
+
+.offcanvas-body .navbar-nav {
+    position: relative;
+}
+
+.m-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.d-inline-flex .nav-item .nav-link:first-child {
+    margin-left: 20px;
+}
+
+/* End header */
+/* Start hero */
+.hero {
+    height: calc(100vh - 55px);
+}
+
+.hero .carousel-inner .carousel-caption {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    color: #7c2c0c;
+    text-align: left;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin-right: unset;
+    margin-left: 10px;
+    text-indent: unset;
+    cursor: pointer;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #7c2c0c;
+    opacity: .5;
+    border-radius: 50%;
+    color: #7c2c0c;
+    transition: opacity .6s ease;
+
+}
+
+.btn-hero {
+    border: 1px solid #7c2c0c;
+    padding: 7px 22px;
+    border-radius: 2px;
+    color: #7c2c0c;
+    transition: all 0.4s ease-in;
+}
+
+.btn-hero:hover {
+    background-color: #7c2c0c;
+    color: #fff;
+}
+
+/* End hero */
+/* Start About Us */
+.section-heading {
+    color: #7c2c0c;
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+.our-work-furniture .owl-carousel img {
+    width: 200px;
+}
+
+.our-work-furniture .owl-carousel .item img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.our-work-furniture .owl-carousel .item:hover {
+    transform: scaleX(1);
+    background-color: #efe4d1;
+    transition: all 0.2s ease-in;
+}
+
+.btn-filled {
+    border: 1px solid #7c2c0c;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background-color: #7c2c0c;
+    transition: all 0.4s ease-in;
+    color: #fff;
+}
+
+.btn-filled:hover {
+    background-color: transparent;
+    color: #7c2c0c;
+}
+
+/* End About Us */
+/* Start Newsletter */
+.newsletter-input {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.newsletter-input>input {
+    border: 1px solid #7c2c0c;
+    color: #7c2c0c;
+    background-color: transparent;
+    border-radius: 1px;
+    font-size: 0.8rem;
+}
+
+.newsletter .btn-filled {
+    padding: 6px 35px;
+}
+
+/* End Newsletter */
+/* Start Contact */
+.contact iframe {
+    width: 100%;
+    height: -webkit-fill-available;
+    min-height: 390px;
+}
+
+/* End Contact */
+/* Start Footer */
+footer {
+    background-color: #100703;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-contact address i,
+.footer-contact a i {
+    margin-right: 10px;
+}
+
+footer h4 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+footer ul li a {
+    color: #878585;
+}
+
+/* End Footer */
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 1.5rem;
+    }
+
+    .hero .carousel-inner .carousel-caption {
+        top: 10%;
+        left: 8%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 15px;
+        padding: 6px;
+        margin-right: unset;
+        margin-left: 5px;
+        background-color: transparent;
+        background-clip: unset;
+        border: 0;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0%;
+        margin-bottom: 1rem;
+        margin-left: 0%;
+        list-style: none;
+    }
+}
